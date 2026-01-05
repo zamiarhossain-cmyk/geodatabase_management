@@ -3,8 +3,8 @@ import os
 from collections import defaultdict, Counter
 
 #INPUT GDBs
-digi_gdb   = r"D:\GIS_work\Python_works\BAR_BAR_Wazirpur_Digi.gdb"
-rawgeo_gdb = r"D:\GIS_work\BAR_BAR_Wazirpur_RawGeo.gdb"
+digi_gdb   = r"D:\GIS_work\Python_works\BAR_BAR_Wazirpur_Digi.gdb" #Location of the digitized geodatabase
+rawgeo_gdb = r"D:\GIS_work\BAR_BAR_Wazirpur_RawGeo.gdb" #Location of the Rawgeo geodatabase
 
 
 def list_all_featureclasses(gdb):
@@ -108,3 +108,4 @@ for jl, sheet in sorted(all_keys):
         print(f"DUPLICATE in RAWGEO to JL {jl}, Sheet {sheet}")
 
 print("\nCHECK COMPLETE")
+
